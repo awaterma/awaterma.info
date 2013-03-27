@@ -1,0 +1,5 @@
+/.idea/
+/app/components/bootstrap/
+/app/components/bootswatch/
+/dist/
+/node_modules/
