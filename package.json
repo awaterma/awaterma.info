@@ -1,0 +1,23 @@
+{
+  "name": "awaterma.net",
+  "version": "0.0.1",
+  "author": "Andrew Glenn Waterman <awaterma@awaterma.net>",
+  "description": "My Web Site",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Programmer",
+    "CV"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-compress": "~0.4.5",
+    "grunt-contrib-less": "~0.5.0"
+  },
+  "license": "None"
+}

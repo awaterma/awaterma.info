@@ -1,0 +1,168 @@
+<!-- Copyright 2013, Andrew Glenn Waterman -->
+<!doctype html>
+<html>
+  <head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="components/bootswatch/cerulean/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/agw.css">
+    <script src="components/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="js/agw.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">awaterma.net</a>
+          <div class="navbar-content">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <ul id="nav" class="nav  nav-pills nav-stacked">
+            <li>
+              <a id="back" href="#back">Background</a>
+            </li>
+            <li>
+              <a id="open" href="#open">Open Source</a>
+            </li>
+            <li>
+              <a id="str" href="#str">Stream</a>
+            </li>
+            <li>
+              <a id="write" href="#write">Writing</a>
+            </li>
+          </ul>
+        </div>
+          <div class="span9">
+              <!-- updated via bindings in agw.js -->
+              <ul class="breadcrumb">
+                  <li>about&nbsp;
+                      <span class="divider">/</span>
+                  </li>
+                  <li class="active">Background</li>
+              </ul>
+              <div id="about" class="hero-unit">
+                  <h3>About Me</h3>
+                  <p class="lead">I came to Chiapas from Berkeley, California in May of 2008 to build experimental
+                      software for a small research University, El Colegio de La Frontera Sur (<a href="http://www.ecosur.mx">ECOSUR</a>).
+                      My soon to be wife and I drove across California, Arizona, New Mexico and Texas to spend our last
+                      day as U.S. residents at the border, in Laredo, Texas. We then entered Mexico through Nuevo Laredo and
+                      made it to the colonial town of San Cristóbal de las casas after less than a week's driving. We have
+                      lived together here ever since, getting married in 2010 (in New Orleans) and building and living
+                      in a small house, close to the center, in Barrio Cerillo.</p>
+
+                  <p>We have two dogs, a labrador and a long-haired chihuahua; along with several plants. I spend my
+                      days programming and configuring systems at ECOSUR. In the evenings, I study algorithms,
+                      play with our dogs, and generally enjoy my family.</p>
+
+                  <p>As part of my open source work with rules based gaming systems, I have
+                      maintained a more public presence on the network by means of Twitter, Google
+                      Plus and other social systems. Please see the links in my Stream for deeper
+                      reading.</p>
+                  <h3>Experience</h3>
+                  <ul>
+                      <li><a href="http://www.oracle.com">Oracle Corporation (1996-2000)</a></li>
+                      <li><a href="http://www.yesmail.com">Post Communications/Yesmail (2000-2003)</a></li>
+                      <li><a href="http://www.oracle.com">Oracle USA (2003-2007)</a></li>
+                      <li><a href="http://www.bea.com">BEA Systems (2007-2008)</a></li>
+                  </ul>
+              </div>
+              <div id="opensource" class="hero-unit">
+                  <h2>Open Source</h2>
+                  <p class="lead">Since 2008, most of my work has been public, open source code, hosted on GitHub. I
+                      maintain two general repositories there, one, "ecosur-sistemas-complejos" that contains the complex
+                      systems work that I built in collaboration with Max Pimm and Luis García Barrios. The second is
+                      under my own name and email and contains a number of personal projects, this website,
+                      among them.
+                  </p>
+                  <p>
+
+                      <a target="_new" href="http://www.github.com"><img class="img-small" src="images/github.png"></a>
+                      <ul>
+                        <li><a target="_new" href="http://www.github.com/ecosur-sistemas-complejos">
+                            Ecosur Sistemas Complejos</a></li>
+                        <li><a target="_new" href="https://github.com/awaterma?tab=repositories">
+                            Personal Projects</a></li>
+                      </ul>
+                  </p>
+              </div>
+              <div id="stream" class="hero-unit">
+                  <h2>Stream</h2>
+                  <p class="lead">I am very active on social networks, and enjoy learning about and interacting with
+                      other members of the software community. I use Twitter and Google Plus for mostly following
+                      (and commenting on) industry specific news. Of course, I am active on Facebook, as well, but
+                      mostly to stay in close contact with friends and family; it can be difficult living so far away.
+                  </p>
+                  <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner" style="margin-left: 6em; margin-top: 6em;">
+                        <div class="active item" id="google">
+                            <g:plus href="https://plus.google.com/106447741274679484716" rel="author"/>
+                        </div>
+                        <div class="item" id="linkedin">
+                            <a href="http://mx.linkedin.com/in/awaterma">
+                                <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160"
+                                     height="33" border="0" alt="View Andrew Waterman's profile on LinkedIn">
+                            </a>
+                        </div>
+                        <div id="twitter" class="item">
+                            <a class="twitter-timeline" href="https://twitter.com/awaterma"
+                               data-widget-id="310583029351464960">Tweets by @awaterma</a>
+                            <script>
+                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+                                    if(!d.getElementById(id)){
+                                        js=d.createElement(s);
+                                        js.id=id;js.src="//platform.twitter.com/widgets.js";
+                                        fjs.parentNode.insertBefore(js,fjs);
+                                    }} (document,"script","twitter-wjs");
+                            </script>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div id="writing" class="hero-unit">
+                  <h2>Writing</h2>
+                  <p class="lead">There was a time in my life when writing was my be-all and end-all. These days, I've
+                      exchanged poems for code, and spend most of my creative energy in engineering solutions. I'm still
+                      writing, but in a different capacity.
+                  </p>
+                  <h3>Scholary Articles</h3>
+                  <dl>
+                      <dt>Journal Article</dt>
+                      <dd><a target="_new" href='http://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=yVHk9EgAAAAJ&citation_for_view=yVHk9EgAAAAJ:9yKSN-GCB0IC'>
+                      <cite>Social dilemmas and individual/group coordination strategies in a complex rural land-use game
+                      L García-Barrios, R García-Barrios, A Waterman, J Cruz-Morales
+                      International Journal of the Commons 5 (2), 364-387</cite></a></li>
+                      <dt>Chapter</dt>
+                      <dd><a target="_new" href='http://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=yVHk9EgAAAAJ&citation_for_view=yVHk9EgAAAAJ:d1gkVwhDpl0C'>
+                      <cite>Sierra Springs: a generic table-top game adressing conflict and cooperation between stakeholders involved in managing land, forest and water in a subhumid tropical mountain watershed
+                      L García-Barrios, A Waterman, R García-Barrios, C Brunel, J Cruz-Morales
+                      ISAGA 2009. Learn to Game, Game to Learn</cite></a></li>
+                      <dt>Chapter</dt>
+                      <dd><a target="_new" href='http://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=yVHk9EgAAAAJ&citation_for_view=yVHk9EgAAAAJ:u-x6o8ySG0sC'>
+                      <cite>Gente: A generic board-game addressing cooperation and conflict in territorial management from the context of core behavior analysis.
+                      A Waterman, L García-Barrios, M Pimm Learn to Game, Game to Learn. p. 1-12.</cite></a></li>
+                      <dt>Thesis</dt>
+                      <dd><a target="_new" href='http://scholar.google.com.mx/citations?view_op=view_citation&hl=en&user=yVHk9EgAAAAJ&citation_for_view=yVHk9EgAAAAJ:u5HHmVD_uO8C'>
+                      <cite>The Eternal Return: Re-reading Shelley's" Revolt of Islam". AG Waterman. San Francisco State University.</cite></a></li>
+                  </dl>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
