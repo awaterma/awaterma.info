@@ -1,5 +1,6 @@
 /.idea/
 /app/components/bootstrap/
 /app/components/bootswatch/
+/app/components/jquery/
 /dist/
 /node_modules/
