@@ -4,8 +4,6 @@
 
 jQuery(document).ready(function () {
         "use strict";
-        var url = jQuery(document.location).attr('href');
-        var hash = url.substring(url.indexOf("#"));
 
         function hideAll() {
             /* Hide all divs */
@@ -13,7 +11,6 @@ jQuery(document).ready(function () {
             jQuery('#opensource').hide();
             jQuery('#stream').hide();
             jQuery('#writing').hide();
-
             jQuery('#nav').children().each(function () {
                jQuery(this).removeClass('active');
             });
@@ -38,10 +35,10 @@ jQuery(document).ready(function () {
 
         jQuery('#str').click(function() {
             hideAll();
+            jQuery('.carousel').carousel({ interval: 8500});
             jQuery('#stream').fadeIn('medium');
             jQuery('#str').parent().addClass('active');
             jQuery('.breadcrumb').children().last().text("stream");
-            jQuery('.carousel').carousel({ interval: 3500});
         });
 
         jQuery('#write').click(function() {
@@ -50,7 +47,9 @@ jQuery(document).ready(function () {
             jQuery('#write').parent().addClass('active');
             jQuery('.breadcrumb').children().last().text("writing");
         });
-
+        
+        var url = jQuery(document.location).attr('href');
+        var hash = url.substring(url.indexOf("#"));
         jQuery(hash).click();
 
 
