@@ -2,8 +2,9 @@
 /app/components/bootstrap/
 /app/components/bootswatch/
 /app/components/jquery/
+/build/
 /dist/
 /node_modules/
-
 /awaterma.net.sublime-project
 /awaterma.net.sublime-workspace
+.sass-cache

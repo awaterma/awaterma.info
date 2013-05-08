@@ -16,6 +16,15 @@ grunt.initConfig({
       }
     }
   },
+  compass: {                  
+    dist: {                  
+      options: {             
+        sassDir: 'app/sass',
+        cssDir: 'app/css',
+        environment: 'production'
+      }
+    }
+  },
   copy: {
     main: {
       files: [
@@ -44,5 +53,8 @@ grunt.initConfig({
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.registerTask('default', ['clean', 'jshint', 'copy','compress']);
+  grunt.loadNpmTasks('grunt-contrib-compass');
+
+  grunt.registerTask('default', ['clean', 'jshint', 'compass', 'copy','compress']);
+  grunt.registerTask('lint',['clean','jshint','compass']);
 };
