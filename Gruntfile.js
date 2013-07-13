@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
 grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
-  clean: ['build','dist'],
+  clean: ['build', 'dist'],
   jshint: {
     files: ['gruntfile.js', 'app/js/*.js', 'test/**/*.js'],
     options: {
@@ -13,15 +13,6 @@ grunt.initConfig({
         console: true,
         module: true,
         document: true
-      }
-    }
-  },
-  compass: {                  
-    dist: {                  
-      options: {             
-        sassDir: 'app/sass',
-        cssDir: 'app/css',
-        environment: 'production'
       }
     }
   },
@@ -46,15 +37,14 @@ grunt.initConfig({
       },
       files: [
         {expand: true, cwd: 'build', src: ['**']}]
+    }
    }
-  }});
+  });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-
-  grunt.registerTask('default', ['clean', 'jshint', 'compass', 'copy','compress']);
-  grunt.registerTask('lint',['clean','jshint','compass']);
+  grunt.registerTask('default', ['clean', 'jshint', 'copy','compress']);
+  grunt.registerTask('lint',['clean','jshint']);
 };

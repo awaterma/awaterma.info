@@ -35,8 +35,8 @@ jQuery(document).ready(function () {
 
         jQuery('#str').click(function() {
             hideAll();
-            jQuery('.carousel').carousel({ interval: 8500});
             jQuery('#stream').fadeIn('medium');
+            jQuery('.carousel').show();
             jQuery('#str').parent().addClass('active');
             jQuery('.breadcrumb').children().last().text("stream");
         });
@@ -47,7 +47,10 @@ jQuery(document).ready(function () {
             jQuery('#write').parent().addClass('active');
             jQuery('.breadcrumb').children().last().text("writing");
         });
-        
+
+        jQuery('.carousel').carousel({ interval: 8500});
+		jQuery('.carousel').hide();
+    
         var url = jQuery(document.location).attr('href');
         var hash = url.substring(url.indexOf("#"));
         jQuery(hash).click();

@@ -1,10 +1,10 @@
 .img-small {
-    max-width: 5em;
-    max-height: 5em;
-    margin-top: 1em;
-    margin-right: 1em;
+  max-width: 5em;
+  max-height: 5em;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 .carousel-inner {
-    position: absolute;
+  position: absolute;
 }
