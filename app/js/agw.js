@@ -49,7 +49,7 @@ jQuery(document).ready(function () {
         });
 
         jQuery('.carousel').carousel({ interval: 8500});
-		jQuery('.carousel').hide();
+        jQuery('.carousel').hide();
     
         var url = jQuery(document.location).attr('href');
         var hash = url.substring(url.indexOf("#"));
