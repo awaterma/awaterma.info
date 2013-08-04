@@ -4,19 +4,19 @@
 
 jQuery(document).ready(function () {
         "use strict";
-
-        function hideAll() {
-            /* Hide all divs */
-            jQuery('#about').hide();
-            jQuery('#opensource').hide();
-            jQuery('#stream').hide();
-            jQuery('#writing').hide();
+        
+        function hide(divs) {
+			for (var counter in divs) {
+               jQuery(divs[counter]).hide();
+			}
             jQuery('#nav').children().each(function () {
                jQuery(this).removeClass('active');
             });
         }
 
-        hideAll();
+		function hideAll() {
+			hide(hide(['#about','#opensource','#stream','#writing']));
+		}
 
         /* Bind controls */
         jQuery('#back').click(function(){
@@ -48,16 +48,11 @@ jQuery(document).ready(function () {
             jQuery('.breadcrumb').children().last().text("writing");
         });
 
-        jQuery('.carousel').carousel({ interval: 8500});
-        jQuery('.carousel').hide();
-    
+        hideAll();
         var url = jQuery(document.location).attr('href');
         var hash = url.substring(url.indexOf("#"));
         jQuery(hash).click();
-
-
+        
+        jQuery('.carousel').carousel({ interval: 2500});
+        jQuery('.carousel').hide();
 });
-
-
-
-
