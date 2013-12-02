@@ -8,3 +8,11 @@
 .carousel-inner {
   position: absolute;
 }
+
+body {
+    padding-top: 70px;
+}
+
+.content {
+    padding-left: 120px;
+}

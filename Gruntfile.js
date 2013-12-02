@@ -19,10 +19,8 @@ grunt.initConfig({
   copy: {
     main: {
       files: [
-          {src: ['components/bootstrap/bootstrap/**'], dest: 'build/', cwd: 'app', expand: true},
+          {src: ['components/bootstrap/**'], dest: 'build/', cwd: 'app', expand: true},
           {src: ['components/jquery/**'], dest: 'build/', cwd: 'app', expand: true},
-          {src: ['components/bootswatch/img/**'], dest: 'build/', cwd: 'app', expand: true},
-          {src: ['components/bootswatch/cerulean/**'], dest: 'build/', cwd: 'app', expand: true},
           {src: ['css/**'], dest: 'build/', cwd: 'app', expand: true },
           {src: ['img/**'], dest: 'build/', cwd: 'app', expand: true },
           {src: ['js/**'], dest: 'build/', cwd: 'app', expand: true },
