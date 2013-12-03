@@ -53,6 +53,6 @@ jQuery(document).ready(function () {
         var hash = url.substring(url.indexOf("#"));
         jQuery(hash).click();
         
-        jQuery('.carousel').carousel({ interval: 2500});
+        jQuery('.carousel').carousel({ interval: 6500});
         jQuery('.carousel').hide();
 });
