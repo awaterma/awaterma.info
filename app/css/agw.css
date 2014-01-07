@@ -1,3 +1,7 @@
+.hidden {
+    visibility: hidden;
+}
+
 .img-small {
   max-width: 5em;
   max-height: 5em;
