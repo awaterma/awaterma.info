@@ -1,0 +1,15 @@
+{
+  "name": "awaterma.net",
+  "version": "1.0.0",
+  "description": "Web site for Awaterma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "forever": "^0.15.1",
+    "http-server": "^0.8.5"
+  }
+}

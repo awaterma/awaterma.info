@@ -1,0 +1,5 @@
+web:
+  image: awaterma/awaterma.net
+  ports:
+   - "8080:8080"
+

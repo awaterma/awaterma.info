@@ -1,0 +1,24 @@
+.hidden {
+    visibility: hidden;
+}
+
+.img-small {
+  max-width: 5em;
+  max-height: 5em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.carousel-inner {
+  position: absolute;
+}
+
+body {
+  padding-top: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        padding-left: 120px;
+    }
+}
