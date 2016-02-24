@@ -8,3 +8,5 @@
 /awaterma.net.sublime-project
 /awaterma.net.sublime-workspace
 node_modules
+html/build/*
+html/dist/*
