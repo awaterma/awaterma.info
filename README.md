@@ -1,4 +1,4 @@
-awaterma.net
+awaterma.info
 ============
 
 Home page.
