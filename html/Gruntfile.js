@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 
 grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
-  clean: ['build', 'dist'],
+  clean: ['build'],
   jshint: {
     files: ['gruntfile.js', 'app/js/*.js', 'test/**/*.js'],
     options: {
@@ -31,7 +31,7 @@ grunt.initConfig({
   compress: {
     main: {
       options: {
-         archive: 'dist/awaterma.zip'
+         archive: '../server/awaterma.zip'
       },
       files: [
         {expand: true, cwd: 'build', src: ['**']}]
