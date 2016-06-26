@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
         function hideAll() {
           var hide = function hide(divs) {
             for (var counter in divs) {
-              jQuery(divs[counter]).hide();
+              jQuery(divs[counter]).addClass('hidden');
             }
             jQuery('#nav').children().each(function () {
               jQuery(this).removeClass('active');
@@ -17,6 +17,7 @@ jQuery(document).ready(function () {
 
         function showPanel(panel, tag, breadCrumb) {
           hideAll();
+          jQuery(panel).removeClass('hidden');
           jQuery(panel).fadeIn('medium');
           jQuery(tag).parent().addClass('active');
           jQuery('.breadcrumb').children().last().text(breadCrumb);

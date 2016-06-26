@@ -31,7 +31,7 @@ grunt.initConfig({
   compress: {
     main: {
       options: {
-         archive: '../server/awaterma.zip'
+         archive: 'dist/awaterma.zip'
       },
       files: [
         {expand: true, cwd: 'build', src: ['**']}]
