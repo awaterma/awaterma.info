@@ -18,7 +18,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
         </button>
-        <span id="homepage"><a class="navbar-brand" href="http://awaterma.info">awaterma.info</a></span>
+        <span id="homepage"><a id="brand" class="navbar-brand"></a></span>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -204,6 +204,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-40308122-1', 'awaterma.info');
     ga('send', 'pageview');
+    /* Brand our about page */
+    var brand = document.getElementById('brand');
+    brand.text = location.hostname;
+    brand.href = 'http://' + location.hostname + ':' + location.port;
 </script>
 </body>
 </html>

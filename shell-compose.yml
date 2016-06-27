@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  shell:
+    build: . 
+    volumes: 
+      - ~/.vim:/home/worker/.vim
+      - ~/.vimrc:/home/worker/.vimrc
+      - ./app:/home/worker/app
+      - ./node_modules:/home/worker/app/node_modules
+      - ./dist:/home/worker/dist
+    command: /bin/bash 
+    stdin_open: true
+    tty: true
+    ports:
+      - "8080:8080"

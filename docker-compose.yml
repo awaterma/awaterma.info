@@ -1,4 +1,12 @@
-web:
-  build: . 
-  ports:
-   - "80:8080"
+version: '2'
+
+services:
+  awaterma.net:
+    build: . 
+    volumes: 
+      - ./app:/home/worker/app
+      - ./node_modules:/home/worker/app/node_modules
+    command: http-server app
+    ports:
+      - "80:8080"
+

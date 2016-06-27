@@ -1,12 +1,4 @@
-/.idea/
-/app/components/bootstrap/
-/app/components/bootswatch/
-/app/components/jquery/
-/build/
-/dist/
-/node_modules/
-/awaterma.net.sublime-project
-/awaterma.net.sublime-workspace
+app/npm-debug.log
+build
+dist
 node_modules
-html/build/*
-html/dist/*

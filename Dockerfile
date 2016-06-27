@@ -1,9 +1,5 @@
 FROM node
-RUN adduser --quiet --home /usr/share/awaterma.net worker && apt-get update && apt-get install -y unzip vim && mkdir /usr/share/awaterma.net/html
-ADD awaterma.zip /usr/share/awaterma.net/
-ADD scripts /usr/share/awaterma.net
-WORKDIR /usr/share/awaterma.net
-RUN npm install 
-RUN chown -R worker:worker /usr/share/awaterma.net && cd html && unzip ../awaterma.zip
+RUN apt-get update -y && apt-get install -y unzip vim && useradd worker && mkdir /home/worker && chown -R worker:worker /home/worker && npm install -g http-server
 USER worker
-ENTRYPOINT ./start.sh
+WORKDIR /home/worker
+CMD /bin/bash 
