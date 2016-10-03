@@ -3,6 +3,9 @@
  */
 jQuery(document).ready(function () {
         "use strict";
+        
+        jQuery('.carousel').carousel({ interval: 4000});
+        
         function hideAll() {
           var hide = function hide(divs) {
             for (var counter in divs) {
@@ -39,10 +42,7 @@ jQuery(document).ready(function () {
         jQuery('#write').click(function() {
             showPanel('#writing','#write','writing');
         });
-        hideAll();
         var url = jQuery(document.location).attr('href');
         var hash = url.substring(url.indexOf("#"));
         jQuery(hash).click();
-        jQuery('.carousel').carousel({ interval: 4000});
-        jQuery('.carousel').hide();
 });

@@ -8,5 +8,5 @@ services:
       - ./node_modules:/home/worker/app/node_modules
     command: http-server app
     ports:
-      - "80:8080"
+      - "8080:8080"
 
